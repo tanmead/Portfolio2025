@@ -1,6 +1,6 @@
 <script setup>
 
-const isNavBarActive = ref(true)
+const isNavBarActive = ref(false)
 const hoveredIndex = ref(null)
 const navItems = [
   {
@@ -61,10 +61,10 @@ function toggleNav() {
         </button>
       </div>
       <div class="w-full" :class="{'hidden': !isNavBarActive}">
-        <ul class="flex flex-col text-center space-y-4 my-4">
+        <ul class="flex flex-col lg:hidden text-center space-y-4 my-4">
           <li
               v-for="(item, index) in navItems"
-              class="py-4 text-2xl"
+              class="py-4 text-xl"
               :key="index"
               @mouseenter="setHoveredIndex(index)"
               @mouseleave="resetHoveredIndex"

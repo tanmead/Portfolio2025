@@ -24,11 +24,16 @@ watch(() => route.path, (newPath) => {
       </h3>
       <WorkButton
           title="Product Development Intern for Eventsheet"
-          link="https://eventsheet.com/"
+          link="/my-work/eventsheet"
+          :external-link=false
       />
       <WorkButton
-          title="My Github"
+          title="Github"
           link="https://github.com/tanmead"
+      />
+      <WorkButton
+          title="LinkedIn"
+          link="https://www.linkedin.com/in/tanner-mead/"
       />
     </div>
     <div class="w-fit justify-items-center">
