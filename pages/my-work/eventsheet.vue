@@ -42,12 +42,15 @@ watch(() => route.path, (newPath) => {
             <li>Gives the ability to delete media after it's been uploaded.</li>
             <li>Matches style and design of company branding.</li>
           </ol>
-
-          <p></p>
-
         </BaseCard>
         <BaseCard>
-
+          <h3>Lessons Learned: </h3>
+          <ol class="list-decimal pl-4">
+            <li>Gained knowledge of Nuxt.js routing and component creation.</li>
+            <li>Practiced design matching in development and the importance of branding.</li>
+            <li>Used custom API to save, update, and delete media assets.</li>
+            <li>Learned about integrating a new component into an existing code base.</li>
+          </ol>
         </BaseCard>
       </div>
 
@@ -57,30 +60,40 @@ watch(() => route.path, (newPath) => {
       </video>
     </div>
     <div class="bg-gray-400 w-7xl mx-auto rounded-2xl py-10 px-20 mb-20">
-      <h2 class="text-center mb-10">Multiple Creative Component</h2>
+      <h2 class="text-center mb-10">Spline Globe</h2>
       <div
           class="flex w-full justify-center space-x-10 mb-20"
           :class="{ 'translate-y-20 opacity-0': startPosition === true }"
       >
         <BaseCard>
           <h3>Objective: </h3>
-          <p>Build a standalone component that can upload multiple mixed creative
-            (photos and videos) so that users can see which combination of media
-            has the best performing ad.</p>
+          <p>Integrate a 3D globe created with Spline into all auth layouts such as login, signup, request, and reset pages.</p>
           <h3>Role: </h3>
           <p>Developer</p>
           <h3>Tools: </h3>
-          <p>Nuxt.js, Vue.js, Figma</p>
+          <p>Nuxt.js, Vue.js, Spline, Figma</p>
         </BaseCard>
         <BaseCard>
-          <h3>Role</h3>
+          <h3>Key Features: </h3>
+          <ol class="list-decimal pl-4">
+            <li>Standalone component that can be integrated into multiple pages in the app.</li>
+            <li>Component consists of a reactive state for user interaction.</li>
+            <li>Utilizes spline runtime tool to inject 3D model into a canvas element.</li>
+            <li>Logo color and styling updated on auth pages.</li>
+          </ol>
         </BaseCard>
         <BaseCard>
-
+          <h3>Lessons Learned: </h3>
+          <ol class="list-decimal pl-4">
+            <li>Learned about spline integration with Nuxt.js.</li>
+            <li>Practiced using async functions with JavaScript.</li>
+            <li>Gained experience with reactive elements.</li>
+            <li>Furthered my understanding of Nuxt.js components and how to structure them.</li>
+          </ol>
         </BaseCard>
       </div>
 
-      <video autoplay loop src="~/assets/videos/multiple-creative-demo.mp4" type="video/mp4"
+      <video autoplay loop src="~/assets/videos/spline-globe.mp4" type="video/mp4"
              class="w-full max-w-7xl">
         Your browser does not support the video tag.
       </video>
