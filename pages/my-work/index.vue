@@ -15,10 +15,11 @@ watch(() => route.path, (newPath) => {
 
 <template>
   <div
-      class="flex w-full justify-center space-x-20 duration-300 ease-out"
+      class="flex w-full min-h-screen justify-center items-center
+      lg:space-x-20 duration-300 ease-out max-lg:flex-col max-lg:space-y-6"
       :class="{ 'translate-y-20 opacity-0': startPosition === true }"
   >
-    <div class="flex flex-col justify-center space-y-3 w-xl">
+    <div class="flex flex-col justify-center space-y-3 lg:w-md">
       <h3 class="text-6xl">
         My Work
       </h3>
@@ -37,7 +38,11 @@ watch(() => route.path, (newPath) => {
       />
     </div>
     <div class="w-fit justify-items-center">
-      <img src="~/assets/img/tannercircle3.png" alt="Tanner" class="w-lg min-w-md"/>
+      <img
+          src="~/assets/img/tannercircle3.png"
+          alt="Tanner"
+          class="w-3/4 max-w-md lg:w-lg lg:min-w-md"
+      />
     </div>
   </div>
 </template>

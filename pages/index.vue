@@ -8,18 +8,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex w-full justify-center space-x-30">
-    <div class="flex flex-col max-w-xl my-auto justify-items-center">
+  <div class="flex max-lg:flex-col max-lg:space-y-6 w-full lg:space-x-4 justify-center h-screen items-center px-4 max-lg:min-h-[850px]">
+    <div class="flex flex-col w-5/6 max-w-xl space-y-2 justify-items-center">
       <p
-          class="intro text-8xl duration-300 delay-500"
+          class="intro text-6xl md:text-8xl duration-300 delay-500"
           :class="{ '-translate-x-100 opacity-0': startPosition === true }"
       >Hi,</p>
       <p
-          class="intro text-8xl text-center duration-500 delay-700"
+          class="intro text-6xl md:text-8xl text-center duration-500 delay-700"
           :class="{ '-translate-x-150 opacity-0': startPosition === true }"
       >I'm Tanner.</p>
       <p
-          class="duration-500 delay-1200"
+          class="duration-500 delay-1200 indent-4"
           :class="{ 'opacity-0': startPosition === true }"
       >I'm a web developer
         who thrives on turning ideas into functional, elegant solutions. With experience in
@@ -33,7 +33,7 @@ onMounted(() => {
           ref="image"
           src="~/assets/img/tannercircle.png"
           alt="Tanner"
-          class="duration-800 ease-out delay-100 w-lg min-w-md"
+          class="duration-800 ease-out delay-100 max-w-lg w-3/4 lg:w-lg lg:min-w-md"
           :class="{ 'translate-x-100 opacity-0': startPosition === true }"/>
     </div>
   </div>

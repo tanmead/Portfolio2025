@@ -1,8 +1,6 @@
 <template>
   <div>
-    <!--    Block to space content under NavBar-->
     <NavBar />
-    <div class="mb-32"></div>
     <slot />
   </div>
 </template>

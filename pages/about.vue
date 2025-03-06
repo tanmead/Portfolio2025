@@ -15,14 +15,19 @@ watch(() => route.path, (newPath) => {
 
 <template>
   <div
-      class="flex w-full justify-center space-x-28 duration-300 ease-out"
+      class="flex min-h-screen max-lg:mt-20 max-lg:flex-col max-lg:space-y-6
+      items-center max-lg:text-center w-full justify-center lg:space-x-28 duration-300 ease-out"
       :class="{ 'translate-y-20 opacity-0': startPosition === true }"
 
   >
     <div class="w-fit justify-items-center">
-      <img src="~/assets/img/tannercircle2.png" alt="Tanner" class="w-lg min-w-md"/>
+      <img
+          src="~/assets/img/tannercircle2.png"
+          alt="Tanner"
+          class="w-3/4 max-w-md lg:w-lg lg:min-w-md"
+      />
     </div>
-    <div class="flex flex-col justify-center space-y-3 max-w-xl">
+    <div class="flex flex-col justify-center items-center space-y-3 lg:max-w-xl w-5/6 mb-6">
       <h3 class="text-6xl">
         About Me
       </h3>

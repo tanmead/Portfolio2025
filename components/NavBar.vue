@@ -2,6 +2,7 @@
 
 const isNavBarActive = ref(false)
 const hoveredIndex = ref(null)
+const router = useRouter()
 const navItems = [
   {
     'title': 'About Me',
@@ -16,6 +17,10 @@ const navItems = [
     'link': '/contact',
   }
 ]
+
+router.afterEach((to, from) => {
+  isNavBarActive.value = false
+})
 
 function setHoveredIndex(index) {
   hoveredIndex.value = index
@@ -35,7 +40,7 @@ function toggleNav() {
 <template>
   <header>
     <nav class="fixed top-0 left-0 w-full mb-10 bg-white">
-      <div class="flex justify-between items-center px-20 py-2 border-b">
+      <div class="flex justify-between items-center px-10 py-2 border-b">
         <div class="flex">
           <a href="/"><img src="~/assets/img/logoname-black.svg" alt="logoname" class=""/></a>
         </div>
@@ -61,10 +66,10 @@ function toggleNav() {
         </button>
       </div>
       <div class="w-full" :class="{'hidden': !isNavBarActive}">
-        <ul class="flex flex-col lg:hidden text-center space-y-4 my-4">
+        <ul class="flex flex-col text-center bg-black text-white">
           <li
               v-for="(item, index) in navItems"
-              class="py-4 text-xl"
+              class="py-4 text-2xl"
               :key="index"
               @mouseenter="setHoveredIndex(index)"
               @mouseleave="resetHoveredIndex"
