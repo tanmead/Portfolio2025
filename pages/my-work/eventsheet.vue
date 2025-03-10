@@ -14,14 +14,16 @@ watch(() => route.path, (newPath) => {
 </script>
 
 <template>
-  <div class="w-full duration-300 ease-out mb-20"
+  <div class="min-w-fit md:w-full duration-300 ease-out mb-20 max-md:mt-20"
        :class="{ 'translate-y-20 opacity-0': startPosition === true }"
   >
-    <h1 class="text-center mb-20">Product Development Intern @ Eventsheet</h1>
-    <div class="bg-gray-400 w-7xl mx-auto rounded-2xl py-10 px-20 mb-20">
-      <h2 class="text-center mb-10">Multiple Creative Component</h2>
+    <div class="flex w-full justify-center items-center md:mt-30">
+      <h1 class="text-center mb-4 md:mb-20 text-2xl md:text-5xl">Product Development Intern @ Eventsheet</h1>
+    </div>
+    <div class="bg-gray-400 w-full md:w-7xl mx-auto rounded-2xl py-2 px-4 md:py-10 md:px-20 mb-20">
+      <h2 class="text-center mb-2 md:mb-10 text-2xl md:text-4xl font-bold">Multiple Creative Component</h2>
       <div
-          class="flex w-full justify-center space-x-10 mb-20"
+          class="flex max-md:flex-col w-full justify-center max-md:space-y-2 md:space-x-10 mb-2 md:mb-20"
           :class="{ 'translate-y-20 opacity-0': startPosition === true }"
       >
         <BaseCard>
@@ -59,10 +61,10 @@ watch(() => route.path, (newPath) => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="bg-gray-400 w-7xl mx-auto rounded-2xl py-10 px-20 mb-20">
-      <h2 class="text-center mb-10">Spline Globe</h2>
+    <div class="bg-gray-400 w-full md:w-7xl mx-auto rounded-2xl py-2 px-4 md:py-10 md:px-20 mb-20">
+      <h2 class="text-center mb-2 md:mb-10 text-2xl md:text-4xl font-bold">Spline Globe</h2>
       <div
-          class="flex w-full justify-center space-x-10 mb-20"
+          class="flex max-md:flex-col w-full justify-center max-md:space-y-2 md:space-x-10 mb-2 md:mb-20"
           :class="{ 'translate-y-20 opacity-0': startPosition === true }"
       >
         <BaseCard>
@@ -105,13 +107,10 @@ watch(() => route.path, (newPath) => {
 
 h1 {
   font-family: 'Roboto Thin', sans-serif;
-  font-size: 3rem;
 }
 
 h2 {
   font-family: 'Roboto Extra Light', sans-serif;
-  font-weight: 400;
-  font-size: 2.2rem
 }
 
 h3 {

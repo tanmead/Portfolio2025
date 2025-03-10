@@ -8,6 +8,10 @@ const props = defineProps({
   link: {
     type: String,
     default: '',
+  },
+  externalLink: {
+    type: Boolean,
+    default: true,
   }
 })
 
@@ -18,12 +22,20 @@ const textColor = computed(() => {
     ? 'bg-blue-700 text-white' : 'bg-blue-300'
 })
 
+const blankTarget = computed(() => {
+  if (props.externalLink) {
+    return "_blank"
+  } else {
+    return ""
+  }
+})
+
 </script>
 
 <template>
   <a
       :href="props.link"
-      target="_blank"
+      :target="blankTarget"
       class="py-3 px-5 w-90 lg:hover:bg-blue-700 lg:hover:w-full lg:hover:text-white
       focus:outline-none rounded-2xl duration-300"
       :class="textColor"
