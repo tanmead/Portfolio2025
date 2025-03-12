@@ -13,7 +13,7 @@ const navItems = [
     'link': '/my-work',
   },
   {
-    'title': 'Contact Me',
+    'title': 'Contact',
     'link': '/contact',
   }
 ]
