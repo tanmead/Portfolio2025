@@ -24,6 +24,6 @@
     font-display: swap;
 }
 
-body {
-    font-family: 'Roboto Regular';
+@theme {
+    --font-body: 'Roboto Regular';
 }

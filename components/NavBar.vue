@@ -44,7 +44,7 @@ function toggleNav() {
         <div class="flex">
           <a href="/"><img src="~/assets/img/logoname-black.svg" alt="logoname" class=""/></a>
         </div>
-        <ul class="hidden lg:flex space-x-44 mr-10">
+        <ul class="hidden lg:flex gap-44 mr-10">
           <li
               v-for="(item, index) in navItems"
               class=""
