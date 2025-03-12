@@ -20,5 +20,10 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: Build image
+        run: |
+          docker build -t tmead3/portfolio:latest
+
       - name: Push image to docker hub
-        run: docker push tmead3/portfolio:latest
+        run: |
+          docker push tmead3/portfolio:latest
