@@ -15,7 +15,7 @@ watch(() => route.path, (newPath) => {
 
 <template>
   <div
-      class="flex flex-col duration-300 ease-out min-h-screen justify-center"
+      class="flex flex-col duration-300 ease-out min-h-screen justify-center max-md:mt-4"
       :class="{ 'translate-y-20 opacity-0': startPosition === true }"
 
   >

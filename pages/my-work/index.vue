@@ -37,7 +37,7 @@ watch(() => route.path, (newPath) => {
           link="https://www.linkedin.com/in/tanner-mead/"
       />
     </div>
-    <div class="w-fit justify-items-center">
+    <div class="max-md:flex max-md:justify-center w-fit justify-items-center">
       <img
           src="~/assets/img/tannercircle3.png"
           alt="Tanner"

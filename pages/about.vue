@@ -20,7 +20,7 @@ watch(() => route.path, (newPath) => {
       :class="{ 'translate-y-20 opacity-0': startPosition === true }"
 
   >
-    <div class="w-fit justify-items-center">
+    <div class="w-fit max-md:flex max-md:justify-center justify-items-center">
       <img
           src="~/assets/img/tannercircle2.png"
           alt="Tanner"

@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex max-lg:flex-col max-lg:space-y-6 w-full lg:gap-4 justify-center h-screen items-center px-4 max-lg:min-h-[850px]">
+  <div class="flex max-lg:flex-col max-lg:mt-4 max-lg:gap-6 w-full lg:gap-4 justify-center h-screen items-center px-4 max-lg:min-h-[850px]">
     <div class="flex flex-col w-5/6 max-w-xl space-y-2 justify-items-center">
       <p
           class="intro text-6xl md:text-8xl duration-300 delay-500"
@@ -28,7 +28,7 @@ onMounted(() => {
         I’m passionate about clean code, innovative problem-solving, and creative design.
         Let’s build the future, one line of code at a time!</p>
     </div>
-    <div class="w-fit justify-items-center">
+    <div class="max-md:flex w-fit justify-items-center max-md:justify-center">
       <img
           ref="image"
           src="~/assets/img/tannercircle.png"

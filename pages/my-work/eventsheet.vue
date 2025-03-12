@@ -56,8 +56,8 @@ watch(() => route.path, (newPath) => {
         </BaseCard>
       </div>
 
-      <video autoplay loop src="~/assets/videos/multiple-creative-demo.mp4" type="video/mp4"
-             class="w-full max-w-7xl">
+      <video autoplay muted loop src="~/assets/videos/multiple-creative-demo.mp4" type="video/mp4"
+             class="w-full max-w-7xl mb-4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -95,8 +95,8 @@ watch(() => route.path, (newPath) => {
         </BaseCard>
       </div>
 
-      <video autoplay loop src="~/assets/videos/spline-globe.mp4" type="video/mp4"
-             class="w-full max-w-7xl">
+      <video autoplay muted loop src="~/assets/videos/spline-globe.mp4" type="video/mp4"
+             class="w-full max-w-7xl mb-4">
         Your browser does not support the video tag.
       </video>
     </div>
