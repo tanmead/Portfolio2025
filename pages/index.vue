@@ -8,7 +8,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex max-lg:flex-col max-lg:space-y-6 w-full lg:space-x-4 justify-center h-screen items-center px-4 max-lg:min-h-[850px]">
+  <div class="flex max-lg:flex-col max-lg:space-y-6 w-full lg:gap-4 justify-center h-screen items-center px-4 max-lg:min-h-[850px]">
     <div class="flex flex-col w-5/6 max-w-xl space-y-2 justify-items-center">
       <p
           class="intro text-6xl md:text-8xl duration-300 delay-500"
