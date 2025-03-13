@@ -109,7 +109,7 @@ const onSubmit = handleSubmit(async (values) => {
     <div class="flex">
       <button
           type="button"
-          class="btn w-90 m-auto rounded-full bg-blue-300 hover:shadow hover:cursor-pointer duration-300 hover:w-full hover:bg-blue-700 hover:text-white p-1"
+          class="btn w-5/6 m-auto rounded-full bg-blue-300 hover:shadow hover:cursor-pointer duration-300 hover:w-full hover:bg-blue-700 hover:text-white p-1"
           @click.prevent="onSubmit"
       >
         Submit
