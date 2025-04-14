@@ -25,6 +25,7 @@ watch(() => route.path, (newPath) => {
           src="~/assets/img/tannercircle2.png"
           alt="Tanner"
           class="w-3/4 max-w-md lg:w-lg lg:min-w-md"
+          loading="eager"
       />
     </div>
     <div class="flex flex-col justify-center items-center gap-3 lg:max-w-xl w-5/6 mb-6">

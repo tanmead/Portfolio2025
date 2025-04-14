@@ -42,6 +42,7 @@ watch(() => route.path, (newPath) => {
           src="~/assets/img/tannercircle3.png"
           alt="Tanner"
           class="w-3/4 max-w-md lg:w-lg lg:min-w-md"
+          loading="eager"
       />
     </div>
   </div>
