@@ -18,7 +18,7 @@ watch(() => route.path, (newPath) => {
        :class="{ 'translate-y-20 opacity-0': startPosition === true }"
   >
     <div class="flex w-full justify-center items-center md:mt-30">
-      <h1 class="text-center mb-4 md:mb-20 text-2xl md:text-5xl">Product Development Intern @ Eventsheet</h1>
+      <h1 class="text-center mb-4 md:mb-20 text-2xl md:text-5xl">Junior Software Developer @ Eventsheet</h1>
     </div>
     <div class="bg-gray-400 w-full md:w-7xl mx-auto rounded-2xl py-2 px-4 md:py-10 md:px-20 mb-20">
       <h2 class="text-center mb-2 md:mb-10 text-2xl md:text-4xl font-bold">Multiple Creative Component</h2>

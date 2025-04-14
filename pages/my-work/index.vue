@@ -24,7 +24,7 @@ watch(() => route.path, (newPath) => {
         My Work
       </h3>
       <WorkButton
-          title="Product Development Intern for Eventsheet"
+          title="Junior Software Developer @ Eventsheet"
           link="/my-work/eventsheet"
           :external-link=false
       />
